@@ -1,0 +1,24 @@
+local function flingCharacter(character)
+    local character = game.Players.LocalPlayer.Character
+    local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+    if humanoidRootPart then
+        local bodyVelocity = humanoidRootPart:FindFirstChild("BodyVelocity")
+        if not bodyVelocity then
+            bodyVelocity = Instance.new("BodyVelocity")
+            bodyVelocity.Velocity = Vector3.new(0, 0, 0) -- Adjust the values as needed
+            bodyVelocity.MaxForce = Vector3.new(0, math.huge, 0)
+            bodyVelocity.Parent = humanoidRootPart
+        else
+            bodyVelocity.Velocity = Vector3.new(0, 0, 0) -- Adjust the values as needed
+
+        end
+    end
+end
+
+flingCharacter(character)
+
+if game.Players.LocalPlayer.leaderstats.Floor = value then
+            local character = game.Players.LocalPlayer.Character
+            local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+            local bodyVelocity = humanoidRootPart:FindFirstChild("BodyVelocity")
+            bodyVelocity:Destroy() 
